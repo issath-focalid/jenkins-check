@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'python hello_world.py'
+                echo 'building the application...'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'copying files to server'
+                echo 'copying files to server...'
             }
         }
     }
